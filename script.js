@@ -16,8 +16,8 @@ document.getElementById('riskForm').addEventListener('submit', function(event) {
     bloodPressure: bpValue,
     familyDisease: familyDisease
   };
-
-  fetch('https://health-insurance-calculator-exfhhhggf0hgb8fu.uaenorth-01.azurewebsites.net', {
+const myurl = "https://health-insurance-calculator-exfhhhggf0hgb8fu.uaenorth-01.azurewebsites.net"
+  fetch(myurl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
